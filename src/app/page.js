@@ -59,8 +59,11 @@ export default function TwoCOLogisticsWebsite() {
             </h1>
 
             <p className="text-slate-300 text-lg leading-relaxed mb-8 max-w-2xl">
-              2CO LOGISTICS LTD provides reliable transportation, fleet management,
-              distribution, and nationwide logistics solutions for businesses across Nigeria.
+  At 2CO Logistics Ltd, we deliver smart, reliable, and results-driven logistics
+  solutions designed to keep businesses moving efficiently across Nigeria.
+  We specialize in haulage operations, fleet management, driver management,
+  procurement logistics, and nationwide distribution services tailored to meet
+  the demands of modern businesses.</p>
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -112,19 +115,52 @@ export default function TwoCOLogisticsWebsite() {
           <div>
             <h2 className="text-4xl font-black mb-6">About 2CO LOGISTICS LTD</h2>
             <p className="text-slate-300 leading-relaxed text-lg mb-6">
-              We are a modern logistics and transportation company focused on delivering
-              operational excellence, fleet efficiency, and dependable nationwide haulage services.
+              At 2co Logistics Ltd, we deliver smart, reliable, and results-driven logistics solutions designed to keep businesses moving efficiently. We specialize in haulage operations, fleet management, driver management, procurement support, and logistics services tailored to meet the demands of modern businesses across Nigeria.
+Founded by Engr. Chukwudi Christopher Okonji, a seasoned transport and fleet operations professional with years of hands-on industry experience, the company was built on the principles of operational excellence, accountability, efficiency, and customer satisfaction. His extensive background in fleet operations, logistics coordination, transport management, and process optimization forms the foundation of the company’s service culture and operational standards.
+With a strong focus on safety, professionalism, timely delivery, and operational efficiency, we help businesses optimize transportation costs, improve fleet performance, and maintain seamless supply chain operations. Our team combines industry expertise, disciplined execution, and a customer-first approach to provide dependable logistics solutions that clients can trust.
+From cargo movement and fleet coordination to professional driver outsourcing and procurement support, 2co Logistics Ltd is committed to delivering efficiency, professionalism, and long-term value at every stage of the logistics process.
+
+Our Core Services
+
+Haulage & Transportation Services
+
+Fleet Management Solutions
+
+Driver Recruitment & Management
+
+Logistics & Supply Chain Support
+
+Procurement & Operational Support Services
+
+Fleet Performance Monitoring & Optimization
+
+
+Why Choose Us
+
+Reliable and timely service delivery
+
+Professional and experienced operations team
+
+Commitment to safety and accountability
+
+Cost-effective logistics solutions
+
+Customer-focused operational support
+
+Strong understanding of transport and fleet operations
+
+2co Logistics Ltd — Moving Businesses Forward Efficiently.
             </p>
 
             <div className="space-y-4">
               <div className="bg-slate-800 rounded-2xl p-5 border border-slate-700">
                 <h3 className="font-bold text-orange-400 mb-2">Mission</h3>
-                <p className="text-slate-300">To deliver safe, efficient, and technology-driven logistics solutions.</p>
+                <p className="text-slate-300">To deliver world-class logistics and transportation solutions through disciplined operations, skilled personnel, modern fleet management practices, and a strong commitment to customer success.</p>
               </div>
 
               <div className="bg-slate-800 rounded-2xl p-5 border border-slate-700">
                 <h3 className="font-bold text-orange-400 mb-2">Vision</h3>
-                <p className="text-slate-300">To become one of Nigeria’s most trusted logistics and haulage brands.</p>
+                <p className="text-slate-300">To redefine logistics and fleet operations in Africa by setting the standard for efficiency, reliability, safety, and customer satisfaction.</p>
               </div>
             </div>
           </div>
@@ -303,12 +339,12 @@ export default function TwoCOLogisticsWebsite() {
             <div className="space-y-6">
               <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
                 <h3 className="font-bold text-orange-400 mb-2">Office Address</h3>
-                <p className="text-slate-300">Lagos, Nigeria</p>
+                <p className="text-slate-300">9b State Housing by NUJ, Calabar, Cross River State, Nigeria</p>
               </div>
 
               <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
                 <h3 className="font-bold text-orange-400 mb-2">Email</h3>
-                <p className="text-slate-300">info@2cologistics.com</p>
+                <p className="text-slate-300">okonjichris4@gmail.com</p>
               </div>
 
               <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
@@ -364,7 +400,7 @@ export default function TwoCOLogisticsWebsite() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/2340000000000"
+        href="https://wa.me/+2347066066701"
         target="_blank"
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-2xl"
       >
