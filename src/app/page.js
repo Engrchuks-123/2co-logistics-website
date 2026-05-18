@@ -64,7 +64,6 @@ export default function TwoCOLogisticsWebsite() {
   We specialize in haulage operations, fleet management, driver management,
   procurement logistics, and nationwide distribution services tailored to meet
   the demands of modern businesses.</p>
-            </p>
 
             <div className="flex flex-wrap gap-4">
               <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-4 rounded-2xl font-semibold shadow-xl">
