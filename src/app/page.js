@@ -1,3 +1,4 @@
+import HeroSection from "./components/HeroSection"
 export default function TwoCOLogisticsWebsite() {
   const services = [
     "Fleet & Haulage Operations",
@@ -43,70 +44,7 @@ export default function TwoCOLogisticsWebsite() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section id="home" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-blue-500/10" />
-
-        <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center relative z-10">
-          <div>
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-300 text-sm mb-6">
-              Trusted Fleet & Haulage Partner
-            </div>
-
-            <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6">
-              Smart Logistics &
-              <span className="text-orange-500"> Haulage Solutions</span>
-            </h1>
-
-            <p className="text-slate-300 text-lg leading-relaxed mb-8 max-w-2xl">
-  At 2CO Logistics Ltd, we deliver smart, reliable, and results-driven logistics
-  solutions designed to keep businesses moving efficiently across Nigeria.
-  We specialize in haulage operations, fleet management, driver management,
-  procurement logistics, and nationwide distribution services tailored to meet
-  the demands of modern businesses.</p>
-
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-4 rounded-2xl font-semibold shadow-xl">
-                Book a Truck
-              </button>
-
-              <button className="border border-slate-700 hover:border-orange-500 px-6 py-4 rounded-2xl font-semibold transition">
-                Track Shipment
-              </button>
-
-              <button className="border border-slate-700 hover:border-orange-500 px-6 py-4 rounded-2xl font-semibold transition">
-                Make Payment
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-slate-800 rounded-2xl p-6">
-                  <h3 className="text-4xl font-black text-orange-500">150+</h3>
-                  <p className="text-slate-400 mt-2">Fleet Vehicles</p>
-                </div>
-
-                <div className="bg-slate-800 rounded-2xl p-6">
-                  <h3 className="text-4xl font-black text-orange-500">36</h3>
-                  <p className="text-slate-400 mt-2">States Covered</p>
-                </div>
-
-                <div className="bg-slate-800 rounded-2xl p-6">
-                  <h3 className="text-4xl font-black text-orange-500">24/7</h3>
-                  <p className="text-slate-400 mt-2">Support Service</p>
-                </div>
-
-                <div className="bg-slate-800 rounded-2xl p-6">
-                  <h3 className="text-4xl font-black text-orange-500">99%</h3>
-                  <p className="text-slate-400 mt-2">Delivery Efficiency</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* About */}
       <section id="about" className="py-24 bg-slate-900">
