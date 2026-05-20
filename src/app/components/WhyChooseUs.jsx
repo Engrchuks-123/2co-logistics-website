@@ -1,137 +1,96 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const reasons = [
+  {
+    title: "Real-Time Fleet Monitoring",
+    description:
+      "Track and manage fleet movement efficiently with technology-driven visibility and operational control.",
+  },
+
+  {
+    title: "Nationwide Coverage",
+    description:
+      "Reliable haulage, distribution, and logistics operations across all major states in Nigeria.",
+  },
+
+  {
+    title: "Experienced Operations Team",
+    description:
+      "Led by logistics professionals with years of hands-on transport and fleet management expertise.",
+  },
+
+  {
+    title: "Fast & Reliable Delivery",
+    description:
+      "Optimized transport planning and dispatch systems ensuring timely and dependable deliveries.",
+  },
+];
+
 export default function WhyChooseUs() {
-  const features = [
-    {
-      title: "Operational Excellence",
-      description:
-        "We maintain high standards in fleet coordination, dispatch planning, and logistics execution.",
-    },
-    {
-      title: "Nationwide Coverage",
-      description:
-        "Our logistics network supports efficient operations across multiple states and delivery routes.",
-    },
-    {
-      title: "Professional Drivers",
-      description:
-        "Experienced and well-supervised drivers focused on safety, professionalism, and timely delivery.",
-    },
-    {
-      title: "24/7 Support",
-      description:
-        "Our operations team remains available to provide updates, coordination, and logistics support.",
-    },
-  ];
 
   return (
-    <section className="py-28 bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
 
-        {/* LEFT */}
-        <div>
+    <section
+      id="why-us"
+      className="bg-[#020617] text-white py-28 px-6"
+    >
 
-          <div className="inline-flex px-4 py-2 rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-300 text-sm mb-6">
-            Why Businesses Choose Us
+      <div className="max-w-7xl mx-auto">
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+
+          <div className="inline-block px-5 py-2 rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-400 text-sm mb-6">
+            WHY BUSINESSES TRUST US
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-black leading-tight mb-8">
-            Trusted Logistics Partner For
-            <span className="block text-orange-500">
-              Reliable Operations
-            </span>
+          <h2 className="text-5xl md:text-6xl font-black leading-tight">
+            Why Choose
+            <span className="text-orange-500"> 2CO Logistics</span>
           </h2>
 
-          <p className="text-slate-400 text-lg leading-relaxed mb-10">
-            At 2CO Logistics Ltd, we combine operational expertise,
-            disciplined fleet management, and customer-focused logistics
-            support to help businesses move products efficiently,
-            safely, and on schedule.
-          </p>
+        </motion.div>
 
-          <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-8">
 
-            {features.map((feature, index) => (
+          {reasons.map((item, index) => (
 
-              <div
-                key={index}
-                className="flex gap-5 bg-slate-950 border border-slate-800 rounded-2xl p-6"
-              >
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-slate-900 border border-slate-800 rounded-3xl p-10"
+            >
 
-                <div className="w-14 h-14 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 font-black">
-                  0{index + 1}
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-bold mb-2">
-                    {feature.title}
-                  </h3>
-
-                  <p className="text-slate-400 leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-
+              <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-400 text-2xl mb-8">
+                ✓
               </div>
 
-            ))}
+              <h3 className="text-2xl font-bold mb-5">
+                {item.title}
+              </h3>
 
-          </div>
+              <p className="text-slate-400 leading-relaxed text-lg">
+                {item.description}
+              </p>
 
-        </div>
+            </motion.div>
 
-        {/* RIGHT */}
-        <div className="relative">
-
-          <div className="bg-gradient-to-br from-orange-500/20 to-blue-500/20 rounded-[40px] p-1">
-
-            <div className="bg-slate-950 rounded-[36px] p-10 h-full">
-
-              <div className="grid grid-cols-2 gap-6">
-
-                <div className="bg-slate-900 rounded-3xl p-8 border border-slate-800">
-                  <h3 className="text-5xl font-black text-orange-500 mb-3">
-                    98%
-                  </h3>
-                  <p className="text-slate-400">
-                    Delivery Reliability
-                  </p>
-                </div>
-
-                <div className="bg-slate-900 rounded-3xl p-8 border border-slate-800">
-                  <h3 className="text-5xl font-black text-orange-500 mb-3">
-                    24/7
-                  </h3>
-                  <p className="text-slate-400">
-                    Operational Support
-                  </p>
-                </div>
-
-                <div className="bg-slate-900 rounded-3xl p-8 border border-slate-800">
-                  <h3 className="text-5xl font-black text-orange-500 mb-3">
-                    20+
-                  </h3>
-                  <p className="text-slate-400">
-                    Fleet Assets
-                  </p>
-                </div>
-
-                <div className="bg-slate-900 rounded-3xl p-8 border border-slate-800">
-                  <h3 className="text-5xl font-black text-orange-500 mb-3">
-                    36
-                  </h3>
-                  <p className="text-slate-400">
-                    States Served
-                  </p>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
+          ))}
 
         </div>
 
       </div>
+
     </section>
   );
 }

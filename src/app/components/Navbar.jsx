@@ -1,101 +1,74 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Navbar() {
-
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-slate-950/70 border-b border-slate-800">
+    <header className="fixed top-0 left-0 w-full z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        
+        <div className="flex items-center justify-between h-20">
 
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          {/* LOGO */}
+          <div className="flex items-center gap-3">
+            <div className="w-14 h-14 rounded-2xl bg-orange-500 flex items-center justify-center text-white font-black text-2xl">
+              2CO
+            </div>
 
-        {/* LOGO */}
-        <div className="flex items-center gap-3">
+            <div>
+              <h1 className="font-black text-lg md:text-2xl">
+                2CO LOGISTICS LTD
+              </h1>
 
-          <div className="w-12 h-12 rounded-2xl bg-orange-500 flex items-center justify-center text-black font-black text-xl">
-            2CO
+              <p className="text-slate-400 text-xs md:text-sm">
+                Fleet • Haulage • Distribution
+              </p>
+            </div>
           </div>
 
-          <div>
-            <h2 className="font-black text-white text-lg">
-              2CO LOGISTICS
-            </h2>
+          {/* NAV LINKS */}
+          <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold">
 
-            <p className="text-slate-400 text-sm">
-              Nationwide Logistics Solutions
-            </p>
-          </div>
+            <a href="#home" className="hover:text-orange-500 transition">
+              Home
+            </a>
 
-        </div>
+            <a href="#about" className="hover:text-orange-500 transition">
+              About
+            </a>
 
-        {/* DESKTOP MENU */}
-        <nav className="hidden lg:flex items-center gap-8 text-slate-300 font-medium">
+            <a href="#services" className="hover:text-orange-500 transition">
+              Services
+            </a>
 
-          <a href="#about" className="hover:text-orange-400 transition">
-            About
-          </a>
+            <a href="#partners" className="hover:text-orange-500 transition">
+              Partners
+            </a>
 
-          <a href="#services" className="hover:text-orange-400 transition">
-            Services
-          </a>
+            <a href="#blog" className="hover:text-orange-500 transition">
+              Blog
+            </a>
 
-          <a href="#contact" className="hover:text-orange-400 transition">
-            Contact
-          </a>
+            <a href="#careers" className="hover:text-orange-500 transition">
+              Careers
+            </a>
 
-          <a href="#partners" className="hover:text-orange-400 transition">
-            Partners
-          </a>
+            <a href="#contact" className="hover:text-orange-500 transition">
+              Contact
+            </a>
 
-        </nav>
+          </nav>
 
-        {/* RIGHT CTA */}
-        <div className="hidden lg:flex items-center gap-4">
-
+          {/* CTA BUTTON */}
           <a
             href="https://wa.me/2347066066701"
             target="_blank"
-            className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-xl text-black font-bold"
+            className="hidden md:inline-flex bg-orange-500 hover:bg-orange-600 transition px-5 py-3 rounded-xl font-semibold"
           >
-            WhatsApp Us
+            Get Quote
           </a>
 
         </div>
-
-        {/* MOBILE BUTTON */}
-        <button
-          className="lg:hidden text-white"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          ☰
-        </button>
 
       </div>
-
-      {/* MOBILE MENU */}
-      {menuOpen && (
-
-        <div className="lg:hidden bg-slate-950 border-t border-slate-800 px-6 py-6 flex flex-col gap-5 text-slate-300">
-
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-          <a href="#partners">Partners</a>
-
-          <a
-            href="https://wa.me/2347066066701"
-            target="_blank"
-            className="bg-orange-500 text-black text-center py-3 rounded-xl font-bold"
-          >
-            WhatsApp Us
-          </a>
-
-        </div>
-
-      )}
-
     </header>
   );
 }

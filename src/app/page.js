@@ -3,53 +3,18 @@ import HeroSection from "./components/HeroSection"
 import AboutSection from "./components/AboutSection"
 import ServiceSection from "./components/ServiceSection"
 import WhyChooseUs from "./components/WhyChooseUs"
+import PartnersSection from "./components/PartnersSection"
 import FleetShowcase from "./components/FleetShowcase"
 import CTASection from "./components/CTASection"
+import Footer from "./components/Footer"
+import FloatingWhatsApp from "./components/FloatingWhatsApp"
+
 export default function TwoCOLogisticsWebsite() {
-  const services = [
-    "Fleet & Haulage Operations",
-    "Nationwide Distribution",
-    "Last-Mile Delivery",
-    "Warehousing Solutions",
-    "Corporate Logistics Contracts",
-    "E-commerce Logistics",
-  ];
-
-  const jobs = [
-    "Fleet Operations Supervisor",
-    "Truck Driver",
-    "Logistics Coordinator",
-    "Warehouse Officer",
-  ];
-
   return (
-    <div className="min-h-screen bg-slate-950 text-white font-sans">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-14 h-14 rounded-2xl bg-orange-500 flex items-center justify-center text-2xl font-black shadow-lg">
-              2CO
-            </div>
-            <div>
-              <h1 className="text-xl font-bold">2CO LOGISTICS LTD</h1>
-              <p className="text-sm text-slate-400">Fleet • Haulage • Distribution</p>
-            </div>
-          </div>
+    <div className="min-h-screen bg-slate-950 text-white font-sans overflow-x-hidden">
 
-          <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="#home" className="hover:text-orange-400">Home</a>
-            <a href="#about" className="hover:text-orange-400">About</a>
-            <a href="#services" className="hover:text-orange-400">Services</a>
-            <a href="#partners" className="hover:text-orange-400">Partners</a>
-            <a href="#blog" className="hover:text-orange-400">Blog</a>
-            <a href="#shop" className="hover:text-orange-400">Shop</a>
-            <a href="#careers" className="hover:text-orange-400">Careers</a>
-            <a href="#contact" className="hover:text-orange-400">Contact</a>
-          </nav>
-        </div>
-      </header>
-<Navbar />
+      <Navbar />
+
       <HeroSection />
 
       <AboutSection />
@@ -57,193 +22,112 @@ export default function TwoCOLogisticsWebsite() {
       <ServiceSection />
 
       <WhyChooseUs />
-<FleetShowcase />
-      <CTASection />
-      {/* Partners */}
-      <section id="partners" className="py-24 bg-slate-900">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-black mb-6">Our Partners</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto mb-12">
-            Trusted by businesses and organizations across multiple industries.
-          </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {["Manufacturing", "Retail", "Oil & Gas", "E-commerce"].map((partner, index) => (
-              <div
-                key={index}
-                className="bg-slate-800 border border-slate-700 rounded-2xl py-10 text-xl font-bold"
-              >
-                {partner}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PartnersSection />
+
+      <FleetShowcase />
+
+      <CTASection />
 
       {/* Blog */}
-      <section id="blog" className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-between mb-12">
+      <section id="blog" className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
             <div>
-              <h2 className="text-4xl font-black mb-3">Latest Insights</h2>
-              <p className="text-slate-400">Industry updates and fleet management insights.</p>
+              <h2 className="text-3xl md:text-4xl font-black mb-3">
+                Latest Insights
+              </h2>
+
+              <p className="text-slate-400 max-w-2xl">
+                Industry updates and fleet management insights.
+              </p>
             </div>
 
-            <button className="border border-orange-500 text-orange-500 px-6 py-3 rounded-2xl font-semibold">
+            <button className="border border-orange-500 text-orange-500 px-6 py-3 rounded-2xl font-semibold hover:bg-orange-500 hover:text-white transition">
               View All Posts
             </button>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((post) => (
-              <div key={post} className="bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-xl">
-                <div className="h-56 bg-gradient-to-br from-orange-500 to-orange-700" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <div className="p-8">
-                  <div className="text-orange-400 text-sm mb-3">Logistics & Fleet Management</div>
+            {/* BLOG 1 */}
+            <div className="bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-xl">
+              <div className="h-56 bg-gradient-to-br from-orange-500 to-orange-700" />
 
-                  <h3 className="text-2xl font-bold mb-4">
-                    Fuel Optimization Strategies for Modern Fleet Operations
-                  </h3>
-
-                  <p className="text-slate-400 leading-relaxed mb-6">
-                    Learn practical ways businesses can reduce fuel costs and improve operational efficiency.
-                  </p>
-
-                  <button className="text-orange-500 font-semibold">Read More →</button>
+              <div className="p-8">
+                <div className="text-orange-400 text-sm mb-3">
+                  Logistics & Fleet Management
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Shop */}
-      <section id="shop" className="py-24 bg-slate-900">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-black mb-4">Shop</h2>
-            <p className="text-slate-400">Logistics accessories and operational products.</p>
-          </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Fuel Optimization Strategies for Modern Fleet Operations
+                </h3>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {["Safety Vest", "Fleet Tracker", "Logistics Toolkit"].map((item, index) => (
-              <div key={index} className="bg-slate-800 rounded-3xl p-8 border border-slate-700">
-                <div className="h-56 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-600 mb-6" />
-                <h3 className="text-2xl font-bold mb-3">{item}</h3>
-                <p className="text-slate-400 mb-6">Premium quality logistics product.</p>
-                <button className="bg-orange-500 px-5 py-3 rounded-xl font-semibold hover:bg-orange-600 transition">
-                  Buy Now
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Careers */}
-      <section id="careers" className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-black mb-4">Careers</h2>
-            <p className="text-slate-400">Join our growing logistics and operations team.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {jobs.map((job, index) => (
-              <div key={index} className="bg-slate-900 border border-slate-800 rounded-3xl p-8">
-                <h3 className="text-2xl font-bold mb-4">{job}</h3>
-                <p className="text-slate-400 mb-6">
-                  We are looking for qualified professionals to join our operations team.
+                <p className="text-slate-400 leading-relaxed mb-6">
+                  Learn practical ways businesses can reduce fuel costs and improve operational efficiency.
                 </p>
-                <button className="bg-orange-500 hover:bg-orange-600 px-5 py-3 rounded-xl font-semibold transition">
-                  Apply Now
+
+                <button className="text-orange-500 font-semibold">
+                  Read More →
                 </button>
               </div>
-            ))}
+            </div>
+
+            {/* BLOG 2 */}
+            <div className="bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-xl">
+              <div className="h-56 bg-gradient-to-br from-blue-500 to-cyan-700" />
+
+              <div className="p-8">
+                <div className="text-orange-400 text-sm mb-3">
+                  Supply Chain Solutions
+                </div>
+
+                <h3 className="text-2xl font-bold mb-4">
+                  Improving Delivery Timelines Through Smart Route Planning
+                </h3>
+
+                <p className="text-slate-400 leading-relaxed mb-6">
+                  Discover how optimized route planning improves delivery speed and customer satisfaction.
+                </p>
+
+                <button className="text-orange-500 font-semibold">
+                  Read More →
+                </button>
+              </div>
+            </div>
+
+            {/* BLOG 3 */}
+            <div className="bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-xl">
+              <div className="h-56 bg-gradient-to-br from-purple-500 to-pink-700" />
+
+              <div className="p-8">
+                <div className="text-orange-400 text-sm mb-3">
+                  Transport Operations
+                </div>
+
+                <h3 className="text-2xl font-bold mb-4">
+                  Why Reliable Fleet Management Matters in Modern Logistics
+                </h3>
+
+                <p className="text-slate-400 leading-relaxed mb-6">
+                  Explore how strong fleet management systems reduce downtime and improve operational efficiency.
+                </p>
+
+                <button className="text-orange-500 font-semibold">
+                  Read More →
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="py-24 bg-slate-900">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-4xl font-black mb-6">Contact Us</h2>
-            <p className="text-slate-300 text-lg mb-10 leading-relaxed">
-              Ready to move your business forward with reliable logistics and transportation solutions?
-            </p>
+      <Footer />
 
-            <div className="space-y-6">
-              <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                <h3 className="font-bold text-orange-400 mb-2">Office Address</h3>
-                <p className="text-slate-300">9b State Housing by NUJ, Calabar, Cross River State, Nigeria</p>
-              </div>
+      <FloatingWhatsApp />
 
-              <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                <h3 className="font-bold text-orange-400 mb-2">Email</h3>
-                <p className="text-slate-300">okonjichris4@gmail.com</p>
-              </div>
-
-              <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                <h3 className="font-bold text-orange-400 mb-2">Support</h3>
-                <p className="text-slate-300">24/7 Customer Support Available</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-slate-800 rounded-3xl p-8 border border-slate-700 shadow-2xl">
-            <h3 className="text-3xl font-black mb-8">Send a Message</h3>
-
-            <div className="space-y-5">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full bg-slate-900 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-orange-500"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full bg-slate-900 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-orange-500"
-              />
-
-              <textarea
-                rows="5"
-                placeholder="Tell us about your logistics needs"
-                className="w-full bg-slate-900 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-orange-500"
-              />
-
-              <button className="w-full bg-orange-500 hover:bg-orange-600 transition py-4 rounded-2xl font-bold text-lg shadow-xl">
-                Submit Inquiry
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-slate-800 py-10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div>
-            <h3 className="text-2xl font-black text-orange-500">2CO LOGISTICS LTD</h3>
-            <p className="text-slate-400 mt-2">Efficient Logistics. Reliable Delivery.</p>
-          </div>
-
-          <div className="text-slate-500 text-sm">
-            © 2026 2CO LOGISTICS LTD. All Rights Reserved.
-          </div>
-        </div>
-      </footer>
-
-      {/* WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/+2347066066701"
-        target="_blank"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-2xl"
-      >
-        💬
-      </a>
     </div>
-  );
+  )
 }
